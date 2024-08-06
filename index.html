@@ -4,170 +4,69 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Siva Prabhu V - Portfolio</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f4f4f4;
-            color: #333;
-        }
-        .container {
-            width: 80%;
-            margin: auto;
-            overflow: hidden;
-        }
-        header {
-            background: #333;
-            color: #fff;
-            padding-top: 30px;
-            min-height: 70px;
-            border-bottom: #77a8d9 3px solid;
-        }
-        header a {
-            color: #fff;
-            text-decoration: none;
-            text-transform: uppercase;
-            font-size: 16px;
-        }
-        header ul {
-            padding: 0;
-            list-style: none;
-        }
-        header li {
-            float: left;
-            display: inline;
-            padding: 0 20px 0 20px;
-        }
-        header #branding {
-            float: left;
-        }
-        header #branding h1 {
-            margin: 0;
-        }
-        header nav {
-            float: right;
-            margin-top: 10px;
-        }
-        header .highlight, header .current a {
-            color: #77a8d9;
-            font-weight: bold;
-        }
-        header a:hover {
-            color: #d3d3d3;
-            font-weight: bold;
-        }
-        #showcase {
-            min-height: 400px;
-            background: url('showcase.jpg') no-repeat 0 -400px;
-            text-align: center;
-            color: #fff;
-        }
-        #showcase h1 {
-            margin-top: 100px;
-            font-size: 55px;
-            margin-bottom: 10px;
-        }
-        #showcase p {
-            font-size: 20px;
-        }
-        #main {
-            padding: 20px;
-        }
-        .box {
-            float: left;
-            width: 30%;
-            padding: 10px;
-            margin: 1.66%;
-            box-sizing: border-box;
-            background: #fff;
-            box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
-        }
-        .box img {
-            max-width: 100%;
-        }
-        .box h3 {
-            text-align: center;
-        }
-        .box p {
-            text-align: center;
-        }
-        footer {
-            text-align: center;
-            padding: 30px 0;
-            background: #333;
-            color: #fff;
-        }
-    </style>
+    <link rel="stylesheet" href="styles.css">
+    <script src="scripts.js" defer></script>
 </head>
 <body>
     <header>
         <div class="container">
-            <div id="branding">
-                <h1><span class="highlight">Siva Prabhu V</span> Portfolio</h1>
-            </div>
+            <img src="assets/photo.jpg" alt="Siva Prabhu V" class="profile-pic">
+            <h1>Siva Prabhu V</h1>
+            <p>Embedded Software Engineer</p>
             <nav>
                 <ul>
-                    <li class="current"><a href="#">Home</a></li>
-                    <li><a href="#about">About Me</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#skills">Skills</a></li>
                     <li><a href="#projects">Projects</a></li>
                     <li><a href="#contact">Contact</a></li>
                 </ul>
             </nav>
         </div>
     </header>
-
-    <section id="showcase">
-        <div class="container">
-            <h1>Welcome to My Portfolio</h1>
-            <p>Embedded Software Engineer | Electronics & Instrumentation</p>
-        </div>
-    </section>
-
-    <section id="main" class="container">
-        <section id="about">
-            <h2>About Me</h2>
-            <p>
-                I am Siva Prabhu V, an Embedded Software Engineer with a strong foundation in embedded systems design, programming, and troubleshooting. I have a Bachelor's degree in Electronics and Instrumentation Engineering from St. Joseph’s College of Engineering.
-            </p>
-            <p>
-                My skills include C, C++, Embedded C, ARM7-based Microcontrollers (LPC2129), 8051, ESP8266, CAN, I2C, UART, SPI, RS232, Linux, RTOS, TCP/IP, Keil, Flash Magic, ISP, Proteus, and CAPL. I have completed an Advanced Embedded Systems Course at Vector India Pvt Ltd, Chennai, and have demonstrated strong leadership and organizational skills by organizing a basketball competition event.
-            </p>
-        </section>
-
-        <section id="projects">
-            <h2>Projects</h2>
-            <div class="box">
-                <h3>CAN-Based Body Control Module</h3>
-                <p>
-                    A project involving CAN communication with 4 nodes, where 1 node is a transmitter and the remaining are receivers for controlling left and right indicators and a wiper.
-                </p>
-            </div>
-            <div class="box">
-                <h3>Multilevel Security System</h3>
-                <p>
-                    A security system that uses a combination of password and OTP sent via SMS for secure access control. It includes an automatic door open and close mechanism.
-                </p>
-            </div>
-            <div class="box">
-                <h3>Python Projects</h3>
-                <p>
-                    Various projects and exercises completed as part of the introductory programming Python certificate and studies on the Kaggle platform.
-                </p>
+    <main>
+        <section id="about" class="about">
+            <div class="container">
+                <h2>About Me</h2>
+                <p>I am an Embedded Software Engineer with a strong foundation in embedded systems design, programming, and troubleshooting. I have a Bachelor's degree in Electronics and Instrumentation Engineering from St. Joseph’s College of Engineering and have completed an Advanced Embedded Systems Course at Vector India Pvt Ltd, Chennai.</p>
             </div>
         </section>
-
-        <section id="contact">
-            <h2>Contact Me</h2>
-            <p>
-                Email: siva@example.com<br>
-                LinkedIn: <a href="https://www.linkedin.com/in/siva-prabhu-v" target="_blank">linkedin.com/in/siva-prabhu-v</a>
-            </p>
+        <section id="skills" class="skills">
+            <div class="container">
+                <h2>Skills</h2>
+                <ul>
+                    <li>C, C++, Embedded C</li>
+                    <li>ARM7-based Microcontrollers (LPC2129)</li>
+                    <li>ESP8266, CAN, I2C, UART, SPI, RS232</li>
+                    <li>Linux, RTOS, TCP/IP</li>
+                    <li>Keil, Flash Magic, ISP, Proteus, CAPL</li>
+                </ul>
+            </div>
         </section>
-    </section>
-
+        <section id="projects" class="projects">
+            <div class="container">
+                <h2>Projects</h2>
+                <ul>
+                    <li>CAN-Based Body Control Module</li>
+                    <li>Multilevel Security System</li>
+                </ul>
+            </div>
+        </section>
+        <section id="contact" class="contact">
+            <div class="container">
+                <h2>Contact Me</h2>
+                <form id="contact-form">
+                    <input type="text" id="name" name="name" placeholder="Your Name" required>
+                    <input type="email" id="email" name="email" placeholder="Your Email" required>
+                    <textarea id="message" name="message" rows="4" placeholder="Your Message" required></textarea>
+                    <button type="submit">Send Message</button>
+                </form>
+            </div>
+        </section>
+    </main>
     <footer>
-        <p>Siva Prabhu V &copy; 2024</p>
+        <div class="container">
+            <p>&copy; 2024 Siva Prabhu V. All Rights Reserved.</p>
+        </div>
     </footer>
 </body>
 </html>
